@@ -10,7 +10,7 @@ namespace InterfaceAbstractDemo
     {
         static void Main(string[] args)
         {
-            BaseCustomerManager baseCustomerManager = new NeroCustomerManager(new MernisServiceAdapter());
+            BaseCustomerManager baseCustomerManager = new NeroCustomerManager();
             
             // Hatalı Kullanıcı Bilgileri Yollandı.
             baseCustomerManager.Save(new Customer() { DateOfBirth = new DateTime(1986,8,19),FirstName="Ali",LastName="Cab",Id=1, NationalityId="11111111111"}); ;
